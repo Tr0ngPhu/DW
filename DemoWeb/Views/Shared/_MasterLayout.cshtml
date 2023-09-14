@@ -1,0 +1,52 @@
+﻿<!Doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width = device - width" />
+    <title> @ViewBag.Title </title>
+</head>
+
+<body style="margin:0">
+    <style>
+         table, th, td {
+            border: 1px solid #1c87c9;
+            padding: 2px;
+            background-color: antiquewhite;
+        }
+
+    </style>
+    <div>
+        <div style="background-color:teal;width:100%; height:63px; clear:both"> Menu</div>
+        <div style="width: 29.5%; height:550px; background-color:antiquewhite;float:left">
+            <table style="width:60%">
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>ABC</td>
+                    <td>123</td>
+                    <td>ChingChong</td>
+                </tr>
+                <tr>
+                    <td>XYZ</td>
+                    <td>312</td>
+                    <td>ChyLa</td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </div>
+        <div style="width:70.5%;height:550px;background-color:burlywood;float:right">
+            Right
+            @RenderBody()
+        </div>
+        <div style="background-color:teal; width:100%; height: 50px; clear:both">Footer</div>
+    </div>
+</body>
+</html>
+
